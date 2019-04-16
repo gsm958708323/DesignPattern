@@ -1,0 +1,10 @@
+﻿[
+    {
+        "panelType": "MainPanel",
+        "path": "Main/MainPanel"
+    },
+    {
+        "panelType": "BattlePanel",
+        "path": "Battle/BattlePanel"
+    }
+]
