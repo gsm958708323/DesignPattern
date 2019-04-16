@@ -4,57 +4,61 @@ using System.Collections.Generic;
  * 角色有国王King，皇后Queen，骑士Knight，妖怪Troll
  * 任何角色可以自由切换武器
  */
-public class Character
+namespace Design.Test01
 {
-    IWeapon m_IWeapon;
-    public Character(IWeapon weapon)
+    public class Character
     {
-        m_IWeapon = weapon ?? new Sword();
+        IWeapon m_IWeapon;
+        public Character(IWeapon weapon)
+        {
+            m_IWeapon = weapon ?? new Sword();
+        }
+        public void SetWeapon(IWeapon weapon)
+        {
+            m_IWeapon = weapon;
+        }
+        public virtual void Fight()
+        {
+            m_IWeapon.UseWeapon();
+        }
     }
-    public void SetWeapon(IWeapon weapon)
+    public class King : Character
     {
-        m_IWeapon = weapon;
+        public King(IWeapon weapon) : base(weapon) { }
+        public override void Fight()
+        {
+            base.Fight();
+            Debugger.Log("力量强！");
+        }
     }
-    public virtual void Fight()
+    public class Queen : Character
     {
-        m_IWeapon.UseWeapon();
+        public Queen(IWeapon weapon) : base(weapon) { }
+        public override void Fight()
+        {
+            base.Fight();
+            Debugger.Log("力量弱！");
+        }
     }
-}
-public class King : Character
-{
-    public King(IWeapon weapon) : base(weapon) { }
-    public override void Fight()
+
+    public interface IWeapon
     {
-        base.Fight();
-        Debugger.Log("力量强！");
+        void UseWeapon();
     }
-}
-public class Queen : Character
-{
-    public Queen(IWeapon weapon) : base(weapon) { }
-    public override void Fight()
+    public class Sword : IWeapon
     {
-        base.Fight();
-        Debugger.Log("力量弱！");
+        public void UseWeapon()
+        {
+            Debugger.Log("使用宝剑");
+        }
+    }
+    public class Knife : IWeapon
+    {
+        public void UseWeapon()
+        {
+            Debugger.Log("使用匕首");
+        }
     }
 }
 
-public interface IWeapon
-{
-    void UseWeapon();
-}
-public class Sword : IWeapon
-{
-    public void UseWeapon()
-    {
-        Debugger.Log("使用宝剑");
-    }
-}
-public class Knife : IWeapon
-{
-    public void UseWeapon()
-    {
-        Debugger.Log("使用匕首");
-    }
-}
 

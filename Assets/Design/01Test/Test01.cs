@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Design.Test01;
 
 public class Test01 : MonoBehaviour
 {
