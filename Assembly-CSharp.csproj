@@ -70,6 +70,8 @@
     <Compile Include="Assets\Design\03Bridge\RenderEngine.cs" />
     <Compile Include="Assets\Design\03Bridge\RenderTest.cs" />
     <Compile Include="Assets\Design\03Bridge\WeaponTest.cs" />
+    <Compile Include="Assets\Design\04Description\Description.cs" />
+    <Compile Include="Assets\Design\04Description\DescriptionTest.cs" />
     <Compile Include="Assets\Design\Intro\Duck.cs" />
     <Compile Include="Assets\Design\Intro\Duck2.cs" />
     <Compile Include="Assets\Design\Intro\IBehavior.cs" />
