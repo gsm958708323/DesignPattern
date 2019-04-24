@@ -72,34 +72,47 @@
     <Compile Include="Assets\Design\03Bridge\WeaponTest.cs" />
     <Compile Include="Assets\Design\04Description\Description.cs" />
     <Compile Include="Assets\Design\04Description\DescriptionTest.cs" />
+    <Compile Include="Assets\Design\05Strategy\Strategy.cs" />
+    <Compile Include="Assets\Design\05Strategy\StrategyTest.cs" />
+    <Compile Include="Assets\Design\06TemplateMethod\TemplateMethod.cs" />
     <Compile Include="Assets\Design\Intro\Duck.cs" />
     <Compile Include="Assets\Design\Intro\Duck2.cs" />
     <Compile Include="Assets\Design\Intro\IBehavior.cs" />
     <Compile Include="Assets\Design\Intro\MallardDuck.cs" />
     <Compile Include="Assets\Design\Intro\ModelDuck.cs" />
     <Compile Include="Assets\Design\Intro\TestDuck.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\BattleScene.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\Fsm.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\GameLoop.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\IStateBase.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\LoginScene.cs" />
-    <Compile Include="Assets\Project\Scripts\01State\MainScene.cs" />
-    <Compile Include="Assets\Project\Scripts\02Facade\AchievementSystem.cs" />
-    <Compile Include="Assets\Project\Scripts\02Facade\GameEventSystem.cs" />
-    <Compile Include="Assets\Project\Scripts\02Facade\IGameSystem.cs" />
-    <Compile Include="Assets\Project\Scripts\02Facade\PlayerSystem.cs" />
-    <Compile Include="Assets\Project\Scripts\02Facade\SystemMananger.cs" />
-    <Compile Include="Assets\Project\Scripts\03Composite\UIBehaviours.cs" />
-    <Compile Include="Assets\Project\Scripts\03Composite\UIComponentBase.cs" />
-    <Compile Include="Assets\Project\Scripts\03Composite\UIComponentManager.cs" />
-    <Compile Include="Assets\Project\Scripts\04Composite\BasePanel.cs" />
-    <Compile Include="Assets\Project\Scripts\04Composite\JsonFx\JsonTool.cs" />
-    <Compile Include="Assets\Project\Scripts\04Composite\Panel\BattlePanel.cs" />
-    <Compile Include="Assets\Project\Scripts\04Composite\Panel\MainPanel.cs" />
-    <Compile Include="Assets\Project\Scripts\04Composite\UIManager.cs" />
-    <Compile Include="Assets\Project\Scripts\Debug\CubeTest.cs" />
-    <Compile Include="Assets\Project\Scripts\Debug\Debugger.cs" />
-    <Compile Include="Assets\Project\Scripts\Debug\Test.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\BattleScene.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\Fsm.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\GameLoop.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\IStateBase.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\LoginScene.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\01State\MainScene.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\02Facade\AchievementSystem.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\02Facade\GameEventSystem.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\02Facade\IGameSystem.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\02Facade\PlayerSystem.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\02Facade\SystemMananger.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\03Composite\UIBehaviours.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\03Composite\UIComponentBase.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\03Composite\UIComponentManager.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\04Composite\BasePanel.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\04Composite\JsonFx\JsonTool.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\04Composite\Panel\BattlePanel.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\04Composite\Panel\MainPanel.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\04Composite\UIManager.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\05Strategy\EnemyStrtegy.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\05Strategy\IAttrStrategy.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\05Strategy\ICharacter.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\05Strategy\ICharacterAttr.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\05Strategy\SoldierStrategy.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\Debug\CubeTest.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\Debug\Debugger.cs" />
+    <Compile Include="Assets\Project\Scripts\Other\Debug\Test.cs" />
+    <Compile Include="Assets\Project\Scripts\Weapon\IWeapon.cs" />
+    <Compile Include="Assets\Project\Scripts\Weapon\WeaponGun.cs" />
+    <Compile Include="Assets\Project\Scripts\Weapon\WeaponLaser.cs" />
+    <Compile Include="Assets\Project\Scripts\Weapon\WeaponRifle.cs" />
+    <Compile Include="Assets\Project\Scripts\Weapon\WeaponRocket.cs" />
     <None Include="Assets\Project\Resources\UIPanelType.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Unity2018.3.0Project/DesignPattern/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -318,7 +331,7 @@
       <HintPath>E:/Unity2018.3.0/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="JsonFx.Json">
-      <HintPath>E:/Unity2018.3.0Project/DesignPattern/Assets/Project/Scripts/04Composite/JsonFx/JsonFx.Json.dll</HintPath>
+      <HintPath>E:/Unity2018.3.0Project/DesignPattern/Assets/Project/Scripts/Other/04Composite/JsonFx/JsonFx.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>E:/Unity2018.3.0Project/DesignPattern/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
